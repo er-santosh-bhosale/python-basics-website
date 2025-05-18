@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Control Structures in Python</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f6f8fa;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #24292f;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #58a6ff;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 2rem 2.5rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2, h3 {
+            color: #0969da;
+        }
+        pre {
+            background: #f3f4f6;
+            border-radius: 6px;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .video-section iframe {
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin: 0 auto;
+            display: block;
+        }
+        .quiz-section {
+            background: #e7f5ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .quiz-section h3 {
+            margin-top: 0;
+        }
+        .quiz-question {
+            margin-bottom: 1.2rem;
+        }
+        .quiz-options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        .quiz-result {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #24292f;
+            color: #fff;
+            margin-top: 2rem;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center; margin:0;">🐍 Python Basics: Lesson 2</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="lesson1.html">Lesson 1</a></li>
+                <li><a href="lesson3.html">Lesson 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Control Structures</h2>
+            <p>In this lesson, we will cover control structures in Python, including:</p>
+            <ul>
+                <li>Conditional Statements (if, elif, else)</li>
+                <li>Loops (for, while)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Conditional Statements</h3>
+            <p>Conditional statements allow you to execute certain pieces of code based on specific conditions.</p>
+            <pre><code>
+# Example of a conditional statement
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+            </code></pre>
+        </section>
+        <section>
+            <h3>Loops</h3>
+            <p>Loops are used to execute a block of code repeatedly.</p>
+            <pre><code>
+# Example of a for loop
+for i in range(5):
+    print(i)
+            </code></pre>
+        </section>
+        <section class="video-section">
+            <h2>Related Videos</h2>
+            <div>
+                <h4>Python If Else Statements</h4>
+                <iframe src="https://www.youtube.com/embed/f4KOjWS_KZs" title="Python If Else Statements"></iframe>
+            </div>
+            <div>
+                <h4>Python Loops Explained</h4>
+                <iframe src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" title="Python Loops"></iframe>
+            </div>
+        </section>
+        <section class="quiz-section">
+            <h3>Quiz: Test Your Understanding</h3>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. Which keyword is used for an alternative condition in Python?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> elseif</label>
+                        <label><input type="radio" name="q1" value="b"> elif</label>
+                        <label><input type="radio" name="q1" value="c"> else if</label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>2. What is the output of this code?<br>
+                    <code>for i in range(3):<br>&nbsp;&nbsp;print(i)</code></p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> 1 2 3</label>
+                        <label><input type="radio" name="q2" value="b"> 0 1 2</label>
+                        <label><input type="radio" name="q2" value="c"> 0 1 2 3</label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>3. Which loop is best for iterating over a known range of numbers?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="a"> for loop</label>
+                        <label><input type="radio" name="q3" value="b"> while loop</label>
+                        <label><input type="radio" name="q3" value="c"> do-while loop</label>
+                    </div>
+                </div>
+                <button type="button" onclick="checkQuiz()" style="margin-top:1rem; padding:0.5rem 1.5rem; background:#0969da; color:#fff; border:none; border-radius:5px; font-size:1rem; cursor:pointer;">Submit Answers</button>
+                <div class="quiz-result" id="quiz-result"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Python Basics. All rights reserved.</p>
+    </footer>
+    <script>
+        function checkQuiz() {
+            const answers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'a'
+            };
+            let score = 0;
+            let total = 3;
+            for (let q in answers) {
+                const selected = document.querySelector('input[name="' + q + '"]:checked');
+                if (selected && selected.value === answers[q]) {
+                    score++;
+                }
+            }
+            const result = document.getElementById('quiz-result');
+            if (score === total) {
+                result.textContent = `🎉 Excellent! You got all ${total} correct.`;
+                result.style.color = 'green';
+            } else {
+                result.textContent = `You got ${score} out of ${total} correct. Try again!`;
+                result.style.color = 'orange';
+            }
+        }
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
